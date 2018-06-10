@@ -10,16 +10,18 @@
 
 <ion-content padding>
 
-  <h3>Welcome to your first Ionic app!</h3>
+  <ion-item>
+    <ion-label><s>Dernaryes Trgaryan</s></ion-label>
+    <ion-checkbox item-right color="secondary" checked="true"></ion-checkbox>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Arya Stark</ion-label>
+    <ion-checkbox item-right color="secondary"></ion-checkbox>
+  </ion-item>
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
+  <ion-fab right bottom>
+    <button ion-fab color="light" (click)="gotoNewJobPage()"><ion-icon name="md-create"></ion-icon></button>
+  </ion-fab>
 
 </ion-content>

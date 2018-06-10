@@ -4,9 +4,12 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
+import { NewJobPage } from '../pages/new-job/new-job';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ProfilePage } from '../pages/profile/profile';
+import { SignInPage } from '../pages/sign-in/sign-in';
 
 
 @Component({
@@ -16,7 +19,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = HelloIonicPage;
+  rootPage = SignInPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -29,8 +32,9 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'To Do List', component: HelloIonicPage },
+      { title: 'Profile', component: ProfilePage },
+      { title: 'Sign Out', component: SignInPage}
     ];
   }
 
